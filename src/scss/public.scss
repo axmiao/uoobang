@@ -1,6 +1,6 @@
 $white:#ffffff;
 $black:#000000;
-$orange:#f1501a;
+$orange:#1ab4f1;
 $gray:#cccccc;
 $gray9:#999999;
 $black3:#333333;
@@ -325,7 +325,7 @@ $actcolor:#00336C;
 		left:0;
 		top:0;
 		bottom:0;
-		background:rgba(0,0,0,0.6);
+		background:rgba(0,0,0,0.7);
 		z-index: 2;
 	}
 	.index-con{
@@ -333,21 +333,21 @@ $actcolor:#00336C;
 		z-index: 3;
 		margin-top:140px;
 		height:100%;
-		margin-top:212.5px;
+		margin-top:262.5px;
 	}
 	.title-en{
 		color:$white;
 		text-align: center;
-		font-family: verdana;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 		font-weight: bold;
-		font-size:28px;
+		font-size:30px;
 		line-height: 1.5;
 	}
 	.title-ch{
 		padding:38px 0 8px 0;
 		text-align:center;
 		.normal{
-			font-size:48px;
+			font-size:38px;
 			line-height: 1.5;
 			color:$white;
 			letter-spacing:1px;
@@ -355,7 +355,7 @@ $actcolor:#00336C;
 			font-weight: bold;
 		}
 		.big{
-			font-size:72px;
+			font-size:50px;
 			color:$orange;
 			font-family: "微软正黑体";
 		}
@@ -765,8 +765,8 @@ $actcolor:#00336C;
 		}
 	}
 	.cen-inner{
-		text-align: center;
-		padding:50px 0 40px;
+		text-align: left;
+		padding:0px 0 40px;
 		p{
 			font-size:14px;
 			line-height: 34px;
@@ -920,7 +920,7 @@ $actcolor:#00336C;
 
 @media only screen and (max-width: 992px){
 	.title{
-		padding-top:20px;
+		padding-top:0;
 	}
 	.clm-m-12{
 		width:100%;
@@ -1133,12 +1133,6 @@ $actcolor:#00336C;
 				box-sizing: border-box;
 			}
 		}
-		.cen-tit{
-			margin-bottom:0px;
-		}
-	}
-	.service,.about,.project,.map,.center{
-		padding-top:20px;	
 	}
 }
 /*container开始*/
