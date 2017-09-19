@@ -154,7 +154,21 @@ $actcolor:#00336C;
 		transform: translateY(20px);	
 	}
 }
-
+@keyframes rotation{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.Rotation {
+    -webkit-transform: rotate(360deg);
+    animation: rotation 10s linear infinite;
+    -moz-animation: rotation 10s linear infinite;
+    -webkit-animation: rotation 10s linear infinite;
+    -o-animation: rotation 10s linear infinite;
+}
 
 // header start;
 .header{
@@ -901,7 +915,7 @@ $actcolor:#00336C;
 
 // sec start;
 .sec{
-	height:300px;
+	min-height:300px;
 	.intro{
 		font-size:14px;
 		line-height: 24px;
@@ -915,6 +929,45 @@ $actcolor:#00336C;
 }
 .sec02{
 	background:$backgray;
+	padding-bottom:100px;
+	.con{
+		overflow:hidden;
+		.adv-lf{
+			padding:0 20px;
+			text-align: right;
+			h3{
+				font-weight: 700;
+			    margin-bottom: 0;
+			    overflow: hidden;
+			    font-size: 30px;
+			    color:$actcolor;
+			    line-height: 1.1;
+			}
+			p{
+			    margin-top: 10px;
+			    margin-left: 30px;
+			    line-height: 1.8em;
+			    margin-bottom: 20px;
+			    color:$tcolor;
+			    font-size: 14px;
+			}
+		}
+		.adv-rt{
+		    margin: 0 auto;
+		    position: relative;
+		    width: 380px;
+		    .svg-bg{
+		    	position: absolute;
+			    top: -25%;
+			    width: 140%;
+			    margin-left: -20%;
+		    }
+		    img{
+		    	transform: scale(1)!important;
+   				opacity: 1!important;
+		    }
+		}
+	}
 }
 // sec end;
 
@@ -1015,6 +1068,9 @@ $actcolor:#00336C;
 @media only screen and (max-width:768px){
 	.clm-s-11{
 		width:91.66%;
+	}
+	.clm-s-12{
+		width:100%;
 	}
 	.container{
 		padding:0 20px;
@@ -1131,6 +1187,19 @@ $actcolor:#00336C;
 				margin-bottom:46px;
 				padding:0 5px;
 				box-sizing: border-box;
+			}
+		}
+	}
+	.sec02{
+		.con{
+			.adv-lf{
+				text-align: center;
+				p{
+					margin:0 auto;
+				}
+			}
+			.adv-rt{
+				width:90%;
 			}
 		}
 	}
